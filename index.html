@@ -1,11 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- ============================= google fonts ===================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- ============================= google fonts ===================================== -->
+    <script src="https://kit.fontawesome.com/4dec750174.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .font {
+            font-family: 'Raleway';
+        }
+    </style>
 </head>
+
 <body>
-    
+    <header class="max-w-[1173px] mx-auto">
+        <nav>
+            <!-- ============================== navbar start here ======================== -->
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li class="text-font text-lg font-medium"><a>Home</a></li>
+                            <li class="text-font text-lg font-medium"><a>About</a></li>
+                            <li class="text-font text-lg font-medium"><a>Destination</a></li>
+                            <li class="text-font text-lg font-medium"><a>Search</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-4xl text-font font-extrabold">P-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li class="text-font text-lg font-medium"><a>Home</a></li>
+                        <li class=" text-font text-lg font-medium"><a>About</a></li>
+                        <li class="text-font text-lg font-medium"><a>Destination</a></li>
+                        <li class="text-font text-lg font-medium"><a>Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end ">
+                    <a
+                        class="btn text-[#1DD100] bg-[#1DD1001A] bg-opacity-[10%] border border-[#1DD1001A] px-[30px] py-[17px]">Bus<i
+                            class="fa-solid fa-bus"></i></a>
+                </div>
+            </div>
+            <!-- ============================== navbar start here ======================== -->
+        </nav>
+        <!-- ================================ banner part start here ============================== -->
+        <div>
+            <div class="hero min-h-screen" style="background-image: url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg);">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="max-w-md">
+                    <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                    <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                    <button class="btn btn-primary">Get Started</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <!-- ================================ banner part end here ============================== -->
+    </header>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
