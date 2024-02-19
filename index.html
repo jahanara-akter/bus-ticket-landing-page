@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <!-- ============================= google fonts ===================================== -->
     <script src="https://kit.fontawesome.com/4dec750174.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -27,7 +30,11 @@
     </script>
     <style>
         .font {
-            font-family: 'Raleway';
+            font-family: "Raleway", sans-serif;
+        }
+
+        .Inter {
+            font-family: "Inter", sans-serif;
         }
     </style>
 </head>
@@ -73,20 +80,284 @@
             <!-- ============================== navbar start here ======================== -->
         </nav>
         <!-- ================================ banner part start here ============================== -->
-        <div>
-            <div class="hero min-h-screen" style="background-image: url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg);">
-                <div class="hero-overlay bg-opacity-60"></div>
+        <div class="lg:mt-12 mt-3">
+            <div class="hero lg:pt-[70px] lg:px-[215px] rounded-[8px] bg-cover bg-center"
+                style="background-image: url('./images/banner.png');height: 550px;">
                 <div class="hero-content text-center text-neutral-content">
-                  <div class="max-w-md">
-                    <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
-                    <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                    <button class="btn btn-primary">Get Started</button>
-                  </div>
+                    <div class="">
+                        <h1 class="mb-5 text-3xl md:text-6xl font-extrabold text-font">End-to-End Travel with<br><span
+                                class="text-[#1DD100]"> P Paribahan</span></h1>
+                        <p class="mb-5 max-w-[691px] text-lg">Yes, you can run unit tests and view the results directly
+                            within the app. The
+                            integrated testing features allow for a streamlined .</p>
+                        <button
+                            class="btn btn-primary bg-[#1DD100] border-0 text-font text-black font-bold mb-[66px]">Buy
+                            Tickets</button>
+                    </div>
                 </div>
-              </div>
+            </div>
         </div>
         <!-- ================================ banner part end here ============================== -->
     </header>
+    <main>
+        <!-- ================================ best-offers start here ============================= -->
+        <section class="max-w-[1173px] mx-auto lg:mt-[189px] mt-8">
+            <h1 class="text-font text-[40px] font-bold leading-[47px] text-center text-[#030712] mb-12">Best offers for
+                you</h1>
+            <div class="lg:flex gap-6 mb-[62px]">
+                <div class="lg:mb-0 mb-5">
+                    <div class="card w-full relative">
+                        <figure><img src="images/cupon.png" alt="cupon.png" /></figure>
+                        <div class="card-body absolute md:pl-[140px] lg:pl-[60px]">
+                            <div class="flex md:gap-[125px] gap-8">
+                                <div>
+                                    <p class="text-Inter md:text-[40px] font-extrabold">15% OFF
+                                    <p>
+                                    <p class="text-Inter md:text-[20px] font-semibold">on your next purchase</p>
+                                    <p class="text-Inter md:text-[18px] font-normal text-opacity-[50%]">use by January
+                                        2024
+                                    </p>
+                                </div>
+                                <div class="text-center">
+                                    <p class="text-Inter md:text-[40px] font-bold text-center lg:mt-5">NEW15</p>
+                                    <p class="text-Inter md:text-[20px] font-semibold text-center">Coupon Code</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card w-full relative">
+                        <figure><img src="images/cupon.png" alt="cupon.png" /></figure>
+                        <div class="card-body absolute md:pl-[140px] lg:pl-[60px]">
+                            <div class="flex md:gap-[130px] gap-8">
+                                <div>
+                                    <p class="text-Inter md:text-[40px] font-extrabold">20% OFF
+                                    <p>
+                                    <p class="text-Inter md:text-[20px] font-semibold">on your next purchase</p>
+                                    <p class="text-Inter md:text-[18px] font-normal text-opacity-[50%]">use by January
+                                        2024
+                                    </p>
+                                </div>
+                                <div class="text-center">
+                                    <p class="text-Inter md:text-[25px] font-bold text-center lg:mt-[35px]">Coupon Code
+                                    </p>
+                                    <p class="text-Inter md:text-[20px] font-semibold text-center">Coupon Code</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <div class="max-w-[1173px] mx-auto text-center lg:mb-[120px] mb-10"> <button
+                class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg text-[#1DD100] bg-transparent border-[#1DD100]">See All
+                Offers</button></div>
+        <!-- ================================ best-offers end here ============================= -->
+        <!-- ============================= ph-poribohan part start here ========================= -->
+        <section class="bg-[#F7F8F8] mx-auto rounded-[88px] border-t border-green-500 lg:pb-[120px]">
+            <h2 class="text-font lg:text-[40px] text-2xl font-bold mb-6 text-center">P.H Paribahan</h2>
+            <p class="text-font lg:text-lg text-base font-normal mb-11 text-center max-w-[736px] mx-auto">Yes, you can run unit tests
+                and view the results directly within the app. The integrated testing features
+                allow for a streamlined .</p>
+            <div class="bg-white mx-auto max-w-[1173px] px-8 lg:flex lg:gap-[80px] relative mb-7 rounded-3xl">
+                <div class="grid lg:grid-cols-2 grid-cols-1">
+                    <div class="flex gap-[14px]">
+                        <div><img src="images/bus-logo.png"></div>
+                        <p class="text-font text-3xl font-bold">Greenline Paribahan<br>
+                            <span class="text-lg font-normal">Coach-009-WEB ! AC_Business</span>
+                        </p>
+                    </div>
+                    <div class="lg:ml-[200px]">
+                        <img src="images/seat-green-filled.png">
+                        <p>40 Seats left</p>
+                    </div>
+                    <div class="col-span-2 bg-[#F7F8F8] p-8 mb-8 mt-3 lg:mt-0">
+                        <div class="flex justify-between border-dashed border-b pb-6">
+                            <p class="text-lg text-font font-semibold text-[#03071299]">Route</p>
+                            <h5 class="text-lg text-font font-semibold text-[#030712]">Dhaka - Sylhet</h5>
+                        </div>
+                        <div class="flex justify-between border-dashed border-b py-6">
+                            <p class="text-lg text-font font-semibold text-[#03071299]">Departure Time</p>
+                            <h5 class="text-lg text-font font-semibold text-[#030712]">9:00 PM</h5>
+                        </div>
+                        <div class="pt-6">
+                            <button
+                                class="btn btn-wide text-Inter text-base text-[#030712CC] font-medium bg-[#0307120D]">Boarding
+                                Point - Laxmipur</button>
+                            <button
+                                class="btn btn-wide lg:mx-6 lg:my-0 my-3 text-Inter text-base text-[#030712CC] font-medium bg-[#0307120D]">Dropping
+                                Point - Bogura</button>
+                            <button
+                                class="btn btn-wide text-Inter text-base text-[#030712CC] font-medium bg-[#0307120D]">Est.
+                                Time - 11 Hour</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute lg:right-[150px] lg:visible invisible">
+                    <img src="images/info-devider.png">
+                </div>
+                <div class="lg:py-[132px]">
+                    <div class="flex justify-center"><img src="images/fare.png"></div>
+                    <h3 class="text-font text-3xl font-bold text-center mt-8">550 Taka<br>
+                        <span class="text-2xl font-semibold text-center">Per Seat</span>
+                    </h3>
+                </div>
+            </div>
+            <div class="bg-white mx-auto max-w-[1173px] px-8 lg:flex  gap-16 rounded-3xl">
+                <div>
+                    <h4 class="text-font text-2xl font-normal pb-6 text-[#030712] border-b border-dashed">Select Your
+                        Seat</h4>
+                    <div class="flex justify-between py-6 border-b border-dashed">
+                        <div class="flex"><img src="images/seat-gray.png">
+                            <h6 class="text-font text-lg text-[#03071280] font-medium">Available</h6>
+                        </div>
+                        <div class="flex"><img src="images/seat-green.png">
+                            <h6 class="text-font text-lg text-[#1DD100] font-medium">Selected</h6>
+                        </div>
+                    </div>
+                    <p class="py-4 lg:px-10 bg-[#0307121A] text-center items-center rounded-md max-w-[90px] mt-6 col-span-5 lg:ml-[425px] ml-[200px] mb-6">
+                        <i class="fa-brands fa-dribbble"></i>
+                    </p>
+                    <div class="grid grid-cols-5 lg:mr-[-24px]">
+                        <p class="mb-6 mr-4 text-center">A</p>
+                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">A1</p>
+                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">A2</p>
+                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">A3</p>
+                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">A4</p>
+                        <p class="mb-6 mr-4 text-center">B</p>
+                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">B1</p>
+                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">B2</p>
+                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">B3</p>
+                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">B4</p>
+                        <p class="mb-6 mr-4 text-center">C</p>
+                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">C1</p>
+                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">C2</p>
+                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">C2</p>
+                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">C3</p>
+                        <p class="mb-6 mr-4 text-center">D</p>
+                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">D1</p>
+                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">D2</p>
+                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">D3</p>
+                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">D4</p>
+                        <p class="mb-6 mr-4 text-center">E</p>
+                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">E1</p>
+                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">E2</p>
+                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">E4</p>
+                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">E5</p>
+                        <p class="mb-6 mr-4 text-center">F</p>
+                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">F1</p>
+                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">F2</p>
+                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">F3</p>
+                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">F4</p>
+                        <p class="mb-6 mr-4 text-center">G</p>
+                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">G1</p>
+                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">G2</p>
+                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">G3</p>
+                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">G4</p>
+                        <p class="mb-6 mr-4 text-center">H</p>
+                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">H1</p>
+                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">H2</p>
+                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">H3</p>
+                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">H4</p>
+                        <p class="mb-6 mr-4 text-center">I</p>
+                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">I1</p>
+                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">I2</p>
+                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">I3</p>
+                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">I4</p>
+                        <p class="mb-6 mr-4 text-center">J</p>
+                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">J1</p>
+                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">J2</p>
+                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">J3</p>
+                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">J4</p>
+                    </div>
+                </div>
+                <div class="border-l border-dashed pl-6">
+                    <h4 class="text-font text-2xl font-normal pb-6 text-[#030712] border-b border-dashed">Select Your
+                        Seat</h4>
+                    <div class="bg-[#F7F8F8] rounded-xl p-8 mt-6">
+                        <div class="grid grid-cols-3 border-b border-dashed pb-4">
+                            <p>Seat</p>
+                            <h5>Class</h5>
+                            <h6>Price</h6>
+                        </div>
+                        <div class="grid grid-cols-3 border-b">
+                            <p class="mb-4">C2</p>
+                            <p class="mr-[120px]">Economoy</p>
+                            <p class="mb-4">550</p>
+                            <p class="mb-4">C2</p>
+                            <p class="mr-[120px]">Economoy</p>
+                            <p class="mb-4">550</p>
+                        </div>
+                        <div class="grid grid-cols-2 gap-[65px] pt-4">
+                            <p class="">Total Price</p>
+                            <p>BDT 1100</p>
+                        </div>
+                        <form class="bg-white max-w-[369px] rounded-xl mt-4 "><input type="text"
+                                placeholder="Have any cupon?" class="p-3 rounded-xl"><button
+                                class="bg-[#1DD100] float-end py-[10px] px-[18px] rounded-md">Apply</button></form>
+                        <div class="grid grid-cols-2 gap-[54px] mt-2">
+                            <p>Grand Total</p>
+                            <p>BDT 1100</p>
+                        </div>
+                    </div>
+                    <label class="form-control w-full">
+                        <div class="label">
+                            <span class="label-text my-4">Passenger Name*</span>
+                        </div>
+                        <input type="text" placeholder="Enter your name" class="input input-bordered w-full mb-6" />
+                    </label>
+                    <label class="form-control w-full">
+                        <div class="label">
+                            <span class="label-text my-4">Phone Number*</span>
+                        </div>
+                        <input type="number" placeholder="Enter your number" class="input input-bordered w-full mb-6" />
+                    </label>
+                    <label class="form-control w-full">
+                        <div class="label">
+                            <span class="label-text my-4">Email ID</span>
+                        </div>
+                        <input type="email" placeholder="Enter your Email ID"
+                            class="input input-bordered w-full mb-6" />
+                    </label>
+                    <button class="btn btn-wide w-full bg-[#1DD100] rounded-2xl mb-6">Next</button>
+                    <div class="flex gap-11 justify-center">
+                        <a href="#" class="border-b">Terms and Conditions</a>
+                        <a href="#" class="border-b">Cancellation Policy</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =============================== ph-poribohan part end here ========================= -->
+    </main>
+    <!-- =================================== footer part start here ================================ -->
+    <footer class="bg-black lg:p-0 p-5 mt-5">
+        <div class="footer py-10 text-neutral-content mx-auto max-w-[1173px] border-b border-dashed lg:gap-[47rem]">
+            <aside>
+                <h2>P-Ticket</h2>
+                <p>P-Ticket is a digital platform to make your <br>daily commuting better.</p>
+            </aside>
+            <nav>
+                <h6 class="footer-title">Download our app</h6>
+                <div class="border rounded-xl flex px-4 py-2">
+                    <img src="images/playstore.png">
+                    <p>Get it on<br>
+                        <span>Google Pay</span>
+                    </p>
+                </div>
+            </nav>
+        </div>
+        <div class="footer items-center py-4 bg-black text-neutral-content mx-auto max-w-[1173px] pb-[120px]">
+            <aside class="items-center grid-flow-col">
+                <p>@all rights reserved, P-Ticket services limited.2024</p>
+            </aside>
+            <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+                <a>Terms & condition</a>
+                <a>Terms & condition</a>
+                <a>Terms & condition</a>
+            </nav>
+        </div>
+    </footer>
+    <!-- ================================== footer part end here ================================= -->
     <script src="js/script.js"></script>
 </body>
 
