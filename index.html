@@ -156,7 +156,8 @@
         <!-- ============================= ph-poribohan part start here ========================= -->
         <section class="bg-[#F7F8F8] mx-auto rounded-[88px] border-t border-green-500 lg:pb-[120px]">
             <h2 class="text-font lg:text-[40px] text-2xl font-bold mb-6 text-center">P.H Paribahan</h2>
-            <p class="text-font lg:text-lg text-base font-normal mb-11 text-center max-w-[736px] mx-auto">Yes, you can run unit tests
+            <p class="text-font lg:text-lg text-base font-normal mb-11 text-center max-w-[736px] mx-auto">Yes, you can
+                run unit tests
                 and view the results directly within the app. The integrated testing features
                 allow for a streamlined .</p>
             <div class="bg-white mx-auto max-w-[1173px] px-8 lg:flex lg:gap-[80px] relative mb-7 rounded-3xl">
@@ -168,8 +169,9 @@
                         </p>
                     </div>
                     <div class="lg:ml-[200px]">
-                        <img src="images/seat-green-filled.png">
-                        <p>40 Seats left</p>
+                        <button class="flex gap-2 bg-[#1DD10026] rounded-xl p-4 font-bold"><img
+                                src="images/seat-green-filled.png"><span id="seat_left">40</span> Seats
+                            left</button>
                     </div>
                     <div class="col-span-2 bg-[#F7F8F8] p-8 mb-8 mt-3 lg:mt-0">
                         <div class="flex justify-between border-dashed border-b pb-6">
@@ -198,7 +200,7 @@
                 </div>
                 <div class="lg:py-[132px]">
                     <div class="flex justify-center"><img src="images/fare.png"></div>
-                    <h3 class="text-font text-3xl font-bold text-center mt-8">550 Taka<br>
+                    <h3 class="text-font text-3xl font-bold text-center mt-8"><span id="Taka">550</span> Taka<br>
                         <span class="text-2xl font-semibold text-center">Per Seat</span>
                     </h3>
                 </div>
@@ -215,89 +217,129 @@
                             <h6 class="text-font text-lg text-[#1DD100] font-medium">Selected</h6>
                         </div>
                     </div>
-                    <p class="py-4 lg:px-10 bg-[#0307121A] text-center items-center rounded-md max-w-[90px] mt-6 col-span-5 lg:ml-[425px] ml-[200px] mb-6">
+                    <p
+                        class="py-4 lg:px-10 bg-[#0307121A] text-center items-center rounded-md max-w-[90px] mt-6 col-span-5 lg:ml-[425px] ml-[200px] mb-6">
                         <i class="fa-brands fa-dribbble"></i>
                     </p>
-                    <div class="grid grid-cols-5 lg:mr-[-24px]">
+                    <div id="seat-button" class="grid grid-cols-5 lg:mr-[-24px]">
                         <p class="mb-6 mr-4 text-center">A</p>
-                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">A1</p>
-                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">A2</p>
-                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">A3</p>
-                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">A4</p>
+                        <button
+                            class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6 seatNumber">A1</button>
+                        <button
+                            class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6 seatNumber">A2</button>
+                        <button
+                            class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6 seatNumber">A3</button>
+                        <button
+                            class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6 seatNumber">A4</button>
                         <p class="mb-6 mr-4 text-center">B</p>
-                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">B1</p>
-                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">B2</p>
-                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">B3</p>
-                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">B4</p>
+                        <button
+                            class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6 seatNumber">B1</button>
+                        <button
+                            class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6 seatNumber">B2</button>
+                        <button
+                            class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6 seatNumber">B3</button>
+                        <button
+                            class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6 seatNumber">B4</button>
                         <p class="mb-6 mr-4 text-center">C</p>
-                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">C1</p>
-                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">C2</p>
-                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">C2</p>
-                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">C3</p>
+                        <button
+                            class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6 seatNumber">C1</button>
+                        <button
+                            class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6 seatNumber">C2</button>
+                        <button
+                            class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6 seatNumber">C2</button>
+                        <button
+                            class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6 seatNumber">C3</button>
                         <p class="mb-6 mr-4 text-center">D</p>
-                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">D1</p>
-                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">D2</p>
-                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">D3</p>
-                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">D4</p>
+                        <button
+                            class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6 seatNumber">D1</button>
+                        <button
+                            class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6 seatNumber">D2</button>
+                        <button
+                            class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6 seatNumber">D3</button>
+                        <button
+                            class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6 seatNumber">D4</button>
                         <p class="mb-6 mr-4 text-center">E</p>
-                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">E1</p>
-                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">E2</p>
-                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">E4</p>
-                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">E5</p>
+                        <button
+                            class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6 seatNumber">E1</button>
+                        <button
+                            class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6 seatNumber">E2</button>
+                        <button
+                            class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6 seatNumber">E4</button>
+                        <button
+                            class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6 seatNumber">E5</button>
                         <p class="mb-6 mr-4 text-center">F</p>
-                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">F1</p>
-                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">F2</p>
-                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">F3</p>
-                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">F4</p>
+                        <button
+                            class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6 seatNumber">F1</button>
+                        <button
+                            class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6 seatNumber">F2</button>
+                        <button
+                            class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6 seatNumber">F3</button>
+                        <button
+                            class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6 seatNumber">F4</button>
                         <p class="mb-6 mr-4 text-center">G</p>
-                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">G1</p>
-                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">G2</p>
-                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">G3</p>
-                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">G4</p>
+                        <button
+                            class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6 seatNumber">G1</button>
+                        <button
+                            class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6 seatNumber">G2</button>
+                        <button
+                            class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6 seatNumber">G3</button>
+                        <button
+                            class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6 seatNumber">G4</button>
                         <p class="mb-6 mr-4 text-center">H</p>
-                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">H1</p>
-                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">H2</p>
-                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">H3</p>
-                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">H4</p>
+                        <button
+                            class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6 seatNumber">H1</button>
+                        <button
+                            class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6 seatNumber">H2</button>
+                        <button
+                            class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6 seatNumber">H3</button>
+                        <button
+                            class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6 seatNumber">H4</button>
                         <p class="mb-6 mr-4 text-center">I</p>
-                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">I1</p>
-                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">I2</p>
-                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">I3</p>
-                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">I4</p>
+                        <button
+                            class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6 seatNumber">I1</button>
+                        <button
+                            class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6 seatNumber">I2</button>
+                        <button
+                            class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6 seatNumber">I3</button>
+                        <button
+                            class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6 seatNumber">I4</button>
                         <p class="mb-6 mr-4 text-center">J</p>
-                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">J1</p>
-                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">J2</p>
-                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">J3</p>
-                        <p class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6">J4</p>
+                        <button
+                            class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6 seatNumber">J1</button>
+                        <button
+                            class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6 seatNumber">J2</button>
+                        <button
+                            class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6 seatNumber">J3</button>
+                        <button
+                            class="py-4 lg:px-11 text-center items-center bg-[#0307121A] rounded-md max-w-[110px] mb-6 mr-6 seatNumber">J4</button>
                     </div>
                 </div>
                 <div class="border-l border-dashed pl-6">
                     <h4 class="text-font text-2xl font-normal pb-6 text-[#030712] border-b border-dashed">Select Your
                         Seat</h4>
                     <div class="bg-[#F7F8F8] rounded-xl p-8 mt-6">
-                        <div class="grid grid-cols-3 border-b border-dashed pb-4">
-                            <p>Seat</p>
-                            <h5>Class</h5>
-                            <h6>Price</h6>
-                        </div>
-                        <div class="grid grid-cols-3 border-b">
-                            <p class="mb-4">C2</p>
-                            <p class="mr-[120px]">Economoy</p>
-                            <p class="mb-4">550</p>
-                            <p class="mb-4">C2</p>
-                            <p class="mr-[120px]">Economoy</p>
-                            <p class="mb-4">550</p>
+                        <div id="seat-name" class="grid grid-cols-3 gap-10">
+                            <p>Seat<span id="TotalSeat" class="bg-[#1DD100] text-white rounded-lg px-2 ml-1">1</span>
+                            </p>
+                            <p>Class</p>
+                            <p>Price</p>
+                            <p id="seatOne">C2</p>
+                            <p>Economoy</p>
+                            <p>550</p>
+                            <p class="SeatTwo">C2</p>
+                            <p>Economoy</p>
+                            <p>550</p>
                         </div>
                         <div class="grid grid-cols-2 gap-[65px] pt-4">
-                            <p class="">Total Price</p>
-                            <p>BDT 1100</p>
+                            <p id="Price">Total Price</p>
+                            <p id="BDT">BDT 1100</p>
                         </div>
                         <form class="bg-white max-w-[369px] rounded-xl mt-4 "><input type="text"
                                 placeholder="Have any cupon?" class="p-3 rounded-xl"><button
                                 class="bg-[#1DD100] float-end py-[10px] px-[18px] rounded-md">Apply</button></form>
                         <div class="grid grid-cols-2 gap-[54px] mt-2">
-                            <p>Grand Total</p>
-                            <p>BDT 1100</p>
+                            <p id="Grand">Grand Total</p>
+                            <p id="GrandBDT">BDT 1100</p>
                         </div>
                     </div>
                     <label class="form-control w-full">
