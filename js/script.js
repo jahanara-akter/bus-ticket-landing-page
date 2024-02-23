@@ -1,29 +1,27 @@
 
- document.addEventListener('DOMContentLoaded', function () {
-    const seatButtons = document.querySelectorAll('.seatNumber');
-    let count = 40;
-    let countTwo = 0;
-    const selectedSeats = new Set();
-    
-    seatButtons.forEach(function (seatButton) {
-        seatButton.addEventListener('click', function () {
-            const seatNumber = this.textContent;
-            if (!selectedSeats.has(seatNumber) && selectedSeats.size < 4) {
-                selectedSeats.add(seatNumber);
-                count = count - 1;
-                countTwo = countTwo + 1;
-                setInnerText("seat_left", count);
-                setInnerText("TotalSeat", countTwo);
-                this.style.backgroundColor = '#1DD100';
-                this.disabled = true;
-            } else if (selectedSeats.size >= 4) {
-                alert("You can only select up to 4 seats.");
-            } else {
-                alert("This seat is already selected!");
-            }
-        });
-    });
-});
-function setInnerText(id, value) {
-    document.getElementById(id).innerText = value;
-}  
+function getSelectedSeat(id) {
+    const leftSeat = document.getElementById(id).innerText;
+    const result = parseInt(leftSeat);
+    return result;
+}
+let totalPrice = 0;
+const seatNumber = document.getElementsByClassName('seatNumber')
+for (const btn of seatNumber) {
+    btn.addEventListener('click', function (event) {
+        const seat = event.target.parentNode.childNodes[3].innerText;
+        const selectedSeat = document.getElementById('selected_seat');
+        const div = document.createElement("div");
+        div.classList.add("flex");
+        div.classList.add("justify-between");
+        const p1 = document.createElement('p');
+        const p2 = document.createElement('p');
+        const p3 = document.createElement('p');
+        p1.innerText = seat;
+        p2.textContent = "Economy";
+        p3.textContent = "550";
+        div.appendChild(p1);
+        div.appendChild(p2);
+        div.appendChild(p3);
+        selectedSeat.append(div);
+    })
+}

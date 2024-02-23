@@ -318,50 +318,47 @@
                     <h4 class="text-font text-2xl font-normal pb-6 text-[#030712] border-b border-dashed">Select Your
                         Seat</h4>
                     <div class="bg-[#F7F8F8] rounded-xl p-8 mt-6">
-                        <div id="seat-name" class="grid grid-cols-3 gap-10">
-                            <p>Seat<span id="TotalSeat" class="bg-[#1DD100] text-white rounded-lg px-2 ml-1">1</span>
-                            </p>
-                            <p>Class</p>
-                            <p>Price</p>
-                            <p id="seatOne">C2</p>
-                            <p>Economoy</p>
-                            <p>550</p>
-                            <p class="SeatTwo">C2</p>
-                            <p>Economoy</p>
-                            <p>550</p>
+                        <div class="flex gap-[110px]  border-dashed pb-2 border-b-4">
+                            <div class="seat font-medium">Seat<span class="bg-[#1DD100] px-2 text-white font-medium rounded ml-1" id=>0</span></div>
+                            <div class="class font-medium">Class</div>
+                            <div class="price font-medium">Price</div>
                         </div>
-                        <div class="grid grid-cols-2 gap-[65px] pt-4">
-                            <p id="Price">Total Price</p>
-                            <p id="BDT">BDT 1100</p>
+                        <div id="selected_seat">
+                            <div class="flex justify-around"></div>
+                        </div>
+                        <hr>
+                        <div class="flex  lg:gap-[204px] pt-4">
+                            <p class="Price font-medium">Total Price</p>
+                            <p class="font-medium">BDT <span id="BDT">0</span></p>
                         </div>
                         <form class="bg-white max-w-[369px] rounded-xl mt-4 "><input type="text"
                                 placeholder="Have any cupon?" class="p-3 rounded-xl"><button
                                 class="bg-[#1DD100] float-end py-[10px] px-[18px] rounded-md">Apply</button></form>
-                        <div class="grid grid-cols-2 gap-[54px] mt-2">
-                            <p id="Grand">Grand Total</p>
-                            <p id="GrandBDT">BDT 1100</p>
+                        <div class="flex lg:gap-[200px] mt-2">
+                            <p class="Grand font-medium">Grand Total</p>
+                            <p class="font-medium">BDT <span id="GrandBDT">0</span> </p>
                         </div>
                     </div>
                     <label class="form-control w-full">
                         <div class="label">
-                            <span class="label-text my-4">Passenger Name*</span>
+                            <span class="label-text my-4 font-medium">Passenger Name*</span>
                         </div>
                         <input type="text" placeholder="Enter your name" class="input input-bordered w-full mb-6" />
                     </label>
                     <label class="form-control w-full">
-                        <div class="label">
+                        <div class="label font-medium">
                             <span class="label-text my-4">Phone Number*</span>
                         </div>
                         <input type="number" placeholder="Enter your number" class="input input-bordered w-full mb-6" />
                     </label>
                     <label class="form-control w-full">
-                        <div class="label">
+                        <div class="label font-medium">
                             <span class="label-text my-4">Email ID</span>
                         </div>
                         <input type="email" placeholder="Enter your Email ID"
                             class="input input-bordered w-full mb-6" />
                     </label>
-                    <button class="btn btn-wide w-full bg-[#1DD100] rounded-2xl mb-6">Next</button>
+                    <button class="btn btn-wide w-full bg-[#1DD100] rounded-2xl mb-6 text-white font-medium">Next</button>
                     <div class="flex gap-11 justify-center">
                         <a href="#" class="border-b">Terms and Conditions</a>
                         <a href="#" class="border-b">Cancellation Policy</a>
