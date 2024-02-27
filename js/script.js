@@ -25,7 +25,13 @@ for (const SeatButton of selectingSeatButton) {
         const BDT = document.getElementById('BDT').innerText;
         const convertedBDT = parseInt(BDT);
         let price = 550;
-        document.getElementById('BDT').innerText = convertedBDT + price;
+        const sum = convertedBDT + price;
+        const GrandBDT = document.getElementById('GrandBDT').innerText;
+        const convertedGrandBDT = parseInt(GrandBDT);
+        const sum2 = convertedGrandBDT + price;
+
+        setinnertext("GrandBDT", sum2);
+        setinnertext("BDT", sum);
         setinnertext("Zero", count);
         setinnertext("seat_left", leftCount);
 
