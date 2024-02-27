@@ -1,3 +1,54 @@
+const selectingSeatButton = document.getElementsByClassName('seatNumber');
+let count = 0;
+let leftCount = 40;
+for (const SeatButton of selectingSeatButton) {
+    SeatButton.addEventListener("click", function (e) {
+        count = count + 1;
+        leftCount = leftCount - 1;
+        setinnertext("Zero", count);
+        setinnertext("seat_left", leftCount);
+        
+    })
+}
+function setinnertext(id, value) {
+    document.getElementById(id).innerText = value;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function getSelectedSeat(id) {
     const leftSeat = document.getElementById(id).innerText;
