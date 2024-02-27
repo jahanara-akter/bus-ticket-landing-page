@@ -318,14 +318,22 @@
                     <h4 class="text-font text-2xl font-normal pb-6 text-[#030712] border-b border-dashed">Select Your
                         Seat</h4>
                     <div class="bg-[#F7F8F8] rounded-xl p-8 mt-6">
-                        <div class="flex gap-[110px]  border-dashed pb-2 border-b-4">
-                            <div class="seat font-medium">Seat<span
-                                    class="bg-[#1DD100] px-2 text-white font-medium rounded ml-1" id="Zero">0</span></div>
-                            <div class="class font-medium">Class</div>
-                            <div class="price font-medium">Price</div>
+                        <div class="flex justify-evenly  border-dashed pb-2 border-b-4">
+                            <div  class="seat font-medium">
+                                <p>Seat<span class="bg-[#1DD100] px-2 text-white font-medium rounded ml-1"
+                                        id="Zero">0</span></p>
+                            </div>
+                            <div  class="class font-medium">
+                                <p>Class</p>
+                            </div>
+                            <div  class="price font-medium">
+                                <p>Price</p>
+                            </div>
                         </div>
-                        <div id="selected_seat">
-                            <div class="flex justify-around"></div>
+                        <div class="flex justify-evenly ">
+                            <ul id="Seat-add"></ul>
+                            <ul id="class-name"></ul>
+                            <ul id="seat-price"></ul>
                         </div>
                         <hr>
                         <div class="flex  lg:gap-[204px] pt-4">
