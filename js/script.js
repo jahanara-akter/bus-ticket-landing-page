@@ -29,8 +29,8 @@ for (const SeatButton of selectingSeatButton) {
 
         let price = 550;
 
-        SetTotal("BDT", price);
-        SetGrandTotal("GrandBDT", price);
+        SetTotal(price);
+        SetGrandTotal();
         setinnertext("Zero", count);
         setinnertext("seat_left", leftCount);
 
@@ -39,25 +39,30 @@ for (const SeatButton of selectingSeatButton) {
 function setinnertext(id, value) {
     document.getElementById(id).innerText = value;
 }
+function SetGrandTotal(status) {
+    const BDT = getconvertedValue('BDT');
+    if (status == undefined) {
+        document.getElementById('GrandBDT').innerText = BDT;
+    } else {
+        const cupon = document.getElementById('cupon').value;
+        if (cupon == "NEW15") {
+            document.getElementById('form').style.display = 'none';
+            const discountedPrice = BDT * 0.15;
+            document.getElementById('GrandBDT').innerText = BDT - discountedPrice;
+        } else {
+            alert('Enter a valid cupon code');
+        }
+    }
 
-function SetTotal(id, value) {
-    const BDT = document.getElementById(id).innerText;
-    const convertedTotalCost = parseInt(BDT);
-    const sum = convertedTotalCost + value;
-    setinnertext('BDT', sum);
 }
-function SetGrandTotal(id, value) {
-    const GrandBDT = document.getElementById(id).innerText;
-    const convertedGrandBDT = parseInt(GrandBDT);
-    const sum = convertedGrandBDT + value;
-    setinnertext('GrandBDT', sum);
+function SetTotal(price) {
+    const BDT = getconvertedValue('BDT');
+    const convertedTotalCost = parseInt(price);
+    const sum = BDT + convertedTotalCost;
+    document.getElementById('BDT').innerText = sum;
 }
-// function SetGrandTotal(id, value) {
-//     const GrandBDT = document.getElementById(id).innerText;
-//     let sum = parseInt(GrandBDT) + value;
-//     const coupon = document.getElementById('cupon').value;
-//     if (coupon === 'NEW15') {
-//         sum = sum - (sum * 20 / 100);
-//     }
-//     setinnertext('GrandBDT', sum);
-// }
+function getconvertedValue(id) {
+    const price = document.getElementById(id).innerText;
+    const convertedPrice = parseInt(price);
+    return convertedPrice;
+}
