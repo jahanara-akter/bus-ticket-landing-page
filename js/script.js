@@ -3,9 +3,10 @@ let count = 0;
 let leftCount = 40;
 for (const SeatButton of selectingSeatButton) {
     SeatButton.addEventListener("click", function (e) {
-        this.style.backgroundColor = "#1DD100";
+        e.target.style.backgroundColor = "#1DD100";
         if (count >= 4) {
             alert("You can only select up to four seats.");
+            e.target.style.backgroundColor = "#0307121A";
             return;
         }
         count = count + 1;
